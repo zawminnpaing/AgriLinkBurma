@@ -55,7 +55,7 @@ function buildProductsHTML(data) {
 
     validProducts.forEach((product) => {
         let specsHTML = "";
-        for(let i=1; i<=5; i++) {
+        for(let i=1; i<=6; i++) {
             let specKey = `spec_${i}`;
             if(product[specKey] && product[specKey].trim() !== "") {
                 let specParts = product[specKey].split(":");
